@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Create user</title>
+</head>
+<body>
+    <main>
+        <header class="header header_home container">
+            <div class="header_left">
+                <a href="index.html" class="header_logo"> LOGO</a>
+            </div>
+            <div class="header_right">
+                <img class="avatar" src="./img/avatar.webp" alt="avatar">
+                <div class="header_name">Hieu</div>
+            </div>
+
+        </header>
+        <section class="create_user">
+            <div class="container">
+            <form action="" class="form-create-user ">
+                <label for="" class="title-info">Name</label>
+                <input type="text" id="name" class="form-control info-user" placeholder="Enter your name">
+                <label for="" class="title-info">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" class="form-control info-user">
+                <label for="" class="title-info" >Phone</label>
+                <input type="number" id="phone" placeholder="Enter your phone" class="form-control info-user">
+                <label for="" class="title-info">Age</label>
+                <input type="number" id="age" placeholder="Enter your age" class="form-control info-user">
+                <label for="" class="title-info">Country</label>
+                <input type="text" id="country" placeholder="Enter your country" class="form-control info-user">
+            </form>
+            <label id="msg" class="title-info"></label>
+
+            <button class="btn btn_add" onclick='manageData()' value="Submit">Add</button>
+        </div>
+        </section>
+    </main>
+    <script src="./services.js"></script>
+</body>
+</html>
