@@ -1,10 +1,6 @@
-
-
-// set preventDefault for form
 // crud 
-let id = 'no'
 selectData()
-function manageData(){
+function validAndCreat(){
     let msg = document.getElementById('msg'); 
     msg.innerHTML = ''
     let name = document.getElementById('name').value
@@ -13,7 +9,7 @@ function manageData(){
     let age = document.getElementById('age').value
     let country = document.getElementById('country').value
     let idUser = Math.floor(Math.random() * 10);
-    console.log("check id",id);
+    console.log("check id",idUser);
     let users = {name,email,phone,age,country,idUser}
     console.log("check user",users);
     if(users.name ==''){
@@ -32,7 +28,6 @@ function manageData(){
         msg.innerHTML ='Pls enter your country'
     }
     else{
-		if(id=='no'){
 			let arr=getCrudData();
 			if(arr==null){
 				let data=[users];
@@ -42,8 +37,6 @@ function manageData(){
 				setCrudData(arr);
 			}
 			msg.innerHTML='Data added';
-            // update users
-		}
         for (const user in users) {
           document.getElementById(`${user}`).value = ''
         }
