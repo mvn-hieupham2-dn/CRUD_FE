@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>CRUD</title>
 </head>
 <body>
@@ -30,7 +31,7 @@
                 <div class="crud">
                     <div id="form-search">
                         <label for="search"></label>
-                        <input type="text" class="form-control input_search" oninput="search()" id="search">
+                        <input type="text" class="form-control input_search" placeholder="Search user by name" oninput="search()" id="search">
                     </div>
                    <a href="./create.html" class="btn btn_create"> Add new user </a>
             </div>
@@ -41,13 +42,12 @@
                           <th>Email</th>
                           <th>Age</th>
                           <th>Phone</th>
-                          <th>Country</th>
+                          <th>Address</th>
                           <th>Action</th>
                         </tr>
                     </thead>
                         <tbody>
                     </tbody >
-                   
                  </table>
             </div>
         </section>
